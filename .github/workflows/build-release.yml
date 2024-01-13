@@ -6,7 +6,7 @@ on:
     paths:
     - 'src/**'
     - 'pom.xml'
-    - '.github/workflows/automation-release.yml'
+    - '.github/workflows/build-release.yml'
 
 permissions:
   contents: write
