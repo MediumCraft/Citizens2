@@ -35,7 +35,9 @@ jobs:
 
     - name: Build and Test
       run: |
-        mvn install dist/pom.xml
+        cd dist
+        mvn install pom.xml
+        cd ../
         mvn clean package install
     
     - name: Set outputs
