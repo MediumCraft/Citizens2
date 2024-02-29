@@ -34,7 +34,9 @@ jobs:
         cache: 'maven'
 
     - name: Build and Test
-      run: mvn clean package install
+      run: |
+        mvn install dist/pom.xml
+        mvn clean package install
     
     - name: Set outputs
       id: short_sha
