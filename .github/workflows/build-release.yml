@@ -36,7 +36,7 @@ jobs:
     - name: Build and Test
       run: |
         cd dist
-        mvn install pom.xml
+        mvn install
         cd ../
         mvn clean package install
     
